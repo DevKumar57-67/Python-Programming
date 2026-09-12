@@ -13,3 +13,4 @@ def bubble(arr):
 arr = list(map(int, input("Enter the array:").split()))
 sorted= bubble(arr)
 print("Sorted array is:", sorted)
+
