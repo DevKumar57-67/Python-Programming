@@ -10,3 +10,6 @@ print(arr*2)
 arr= list(map(int,input("Enter the elements of the array:").split()))
 print("The array is ", arr)
 
+#operations on arrays
+#finding the length of the array we use the len built-in function n python  
+print("the length of th array is:", len(arr))
