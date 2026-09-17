@@ -22,4 +22,3 @@ result = bubble_sort(arr)
 print("The sorted array is: ", result)
 
 
-        
