@@ -33,8 +33,49 @@ n == height.length
 
 
 #Approach to the problem
+# There are two main ways to solve the problem
+# Brute_Force Approach
+# Two-Pointer Approach
+
+
+
+
 # The core part for the solution or the heart of the solution is this mathematical equation:
 # area = (j-1) * min(height[i], height[j])
+
+# We will be using this mathematical equation in both the problems
+
+# THE BRUTE FORCE APPROACH-:
+
+# In the brute force approach we use the every possoble way to find the right optimum solution for the problem
+#Algorithm: 
+# Step 1: initilize max_area = 0 
+# Step 2: use a nested loop run i from 0 to n and j from i+1 to n
+# Step 3: now use the formula and calculate the area 
+# step 4: find the value of max_area using the max(max_area, area)
+# step 5: return the max_area
+
+
+#Code
+
+def max_area(height):
+     max_area= 0
+     n = len(height)-1
+
+     for i in range(n):
+          for j in range(i+1,n):
+               area = (j-i) * min(height[i], height[j])
+               max_area = max(max_area, area)
+     return max_area
+
+#This algorithm has a time complexity  of O(n^2) and space complexity of O(1)
+
+
+
+
+
+               
+
 
 #Algorithm
 # step 1: we will take two pointers i and j initilize them i = 0, j = len(height)-1 and max_area = 0
@@ -68,3 +109,6 @@ def max_water(height):
 height = list(map(int,input("Enter the values: ").split()))
 result = max_water(height)
 print("The max_water is :", result)
+
+
+#The algorithm has a time complexity of O(n) and space complexity of O(1) hence it iis an optimized algorithm
