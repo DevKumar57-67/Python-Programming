@@ -19,4 +19,6 @@ print("The size of the arrat is: ",n)
 key = int(input("Enter the key element:"))
 result = linear_search(arr,n,key)
 print("The key element is at index: ", result)
-print("This is Linear search")
+
+#Linear Search has a time complexity of O(n) and space complexity of O(1) 
+
